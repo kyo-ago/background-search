@@ -1,10 +1,10 @@
 {
 	"name": "background-search",
-	"version": "0.2",
+	"version": "0.3",
 	"manifest_version": 2,
+	"default_locale": "en",
 	"icons": {
-		"16": "logo.png",
-		"128": "logo.png"
+		"128": "img/128.png"
 	},
 	"background" : {
 		"persistent": false,

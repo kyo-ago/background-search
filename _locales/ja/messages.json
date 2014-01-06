@@ -1,0 +1,13 @@
+{
+    "tabsCreateUrl": {
+        "message": "https://www.google.co.jp/search?q=$q$",
+        "placeholders": {
+            "q": {
+                "content": "$1"
+            }
+        }
+    },
+    "contextMenusTitle": {
+        "message": "Googleで「%s」を検索"
+    }
+}

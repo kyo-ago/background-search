@@ -6,13 +6,13 @@ chrome.contextMenus.onClicked.addListener(function (evn) {
 		var search = encodeURIComponent(evn.selectionText);
 		chrome.tabs.create({
 			'active' : false,
-			'url' : 'https://www.google.co.jp/search?q=' + search,
+			'url' : chrome.i18n.getMessage('tabsCreateUrl', search),
 			'index' : tabs[0].index + 1
 		});
 	});
 });
 chrome.contextMenus.create({
 	'id' : 'root',
-	'title' : 'Search Google for \'%s\'',
+	'title' : chrome.i18n.getMessage('contextMenusTitle'),
 	'contexts' : ['selection', 'editable']
 });

@@ -1,0 +1,13 @@
+{
+    "tabsCreateUrl": {
+        "message": "https://www.google.com/search?q=$q$",
+        "placeholders": {
+            "q": {
+                "content": "$1"
+            }
+        }
+    },
+    "contextMenusTitle": {
+        "message": "Search Google for '%s'"
+    }
+}
