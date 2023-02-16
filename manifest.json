@@ -1,20 +1,23 @@
 {
 	"name": "background-search",
-	"version": "0.3",
-	"manifest_version": 2,
+	"version": "0.4",
+	"manifest_version": 3,
 	"default_locale": "en",
 	"icons": {
 		"128": "img/128.png"
 	},
 	"background" : {
-		"persistent": false,
-		"scripts": [
-			"/src/background.js"
-		]
+		"service_worker": "./src/background.js"
+	},
+	"options_ui": {
+		"page": "./src/options.html",
+		"open_in_tab": false
 	},
 	"permissions": [
-		"tabs",
-		"<all_urls>",
+		"storage",
 		"contextMenus"
+	],
+	"host_permissions": [
+		"<all_urls>"
 	]
 }
